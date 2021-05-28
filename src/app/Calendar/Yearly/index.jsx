@@ -1,9 +1,10 @@
 import React from 'react';
+import { shortHandDayNames } from '../constants';
 import Monthly from '../Monthly';
 import { getMonthName } from '../util/calendar';
 import styles from './index.styles.scss';
 
-const shortHandDays = ['Paz', 'Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt'];
+const shortHandDays = shortHandDayNames;
 
 export default class Yearly extends React.Component {
   returnCalendar() {

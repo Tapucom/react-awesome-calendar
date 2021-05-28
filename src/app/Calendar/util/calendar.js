@@ -1,4 +1,4 @@
-import { endPosition, middlePosition, startPosition } from '../constants';
+import { endPosition, middlePosition, startPosition, monthNames } from '../constants';
 import { getDate } from './date';
 
 let firstDayOfWeek = 0;
@@ -185,19 +185,6 @@ export const getEventsForCalendar = (events, calendar) => {
 };
 
 export const getMonthName = month => {
-  const months = [
-    'Ocak',
-    'Şubat',
-    'Mart',
-    'Nisan',
-    'Mayıs',
-    'Haziran',
-    'Temmuz',
-    'Ağustos',
-    'Eylül',
-    'Ekim',
-    'Kasım',
-    'Aralık'
-  ];
+  const months = monthNames;
   return months[month];
 };

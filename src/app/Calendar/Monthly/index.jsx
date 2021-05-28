@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './index.styles.scss';
 import { getCalendarMonth, getEventsForCalendar } from '../util/calendar';
 import Week from './Week';
+import { shortDayNames } from '../constants';
 
 export default class Monthly extends React.Component {
   constructor(props) {
@@ -71,5 +72,5 @@ export default class Monthly extends React.Component {
 }
 
 Monthly.defaultProps = {
-  daysOfWeek: ['Paz', 'Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt'],
+  daysOfWeek: shortDayNames,
 };

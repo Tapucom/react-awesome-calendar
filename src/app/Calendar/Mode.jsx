@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import { dailyMode, monthlyMode, yearlyMode } from './constants';
+import { dailyMode, DayText, monthlyMode, MonthText, yearlyMode, YearText } from './constants';
 import styles from './index.styles.scss';
 const year = 'year';
 const month = 'month';
@@ -13,17 +13,17 @@ export default class Mode extends React.PureComponent {
       {
         id: year,
         mode: yearlyMode,
-        text: 'Yıl',
+        text: YearText,
       },
       {
         id: month,
         mode: monthlyMode,
-        text: 'Ay',
+        text: MonthText,
       },
       {
         id: day,
         mode: dailyMode,
-        text: 'Gün',
+        text: DayText,
       },
     ];
     if (Array.isArray(modes) && modes.length) {
