@@ -10,11 +10,11 @@ export default class Mode extends React.PureComponent {
   returnModes() {
     const { active } = this.props;
     const modes = [
-      {
-        id: year,
-        mode: yearlyMode,
-        text: YearText,
-      },
+      // {
+      //   id: year,
+      //   mode: yearlyMode,
+      //   text: YearText,
+      // },
       {
         id: month,
         mode: monthlyMode,
